@@ -1,0 +1,17 @@
+[package]
+name = "aws-sigv4"
+version = "0.1.0"
+authors = ["David Barsky <me@davidbarsky.com>", "Dejim Juang <dejimj@gmail.com>"]
+edition = "2021"
+license = "Apache-2.0"
+description = "AWS SigV4 signer for HTTP requests"
+
+[dependencies]
+http = "0.2"
+http-body = "0.4"
+ring = "0.16"
+serde = { version = "1", features = ["derive"] }
+serde_urlencoded = "0.7"
+bytes = "1"
+hex = "0.4"
+chrono = { version = "0.4", default-features = false, features = ["clock", "std"] }
